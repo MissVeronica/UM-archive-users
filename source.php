@@ -47,6 +47,6 @@ function my_profile_content_main( $args ) {
 function my_profile_can_view_main( $value, $user_id ) {
 
     um_fetch_user( $user_id );
-    if( um_user( 'wp_roles' ) == 'um_archived' ) return "This user is archived";
+    if( um_user( 'wp_roles' ) == 'um_archived' ) return "This user account is archived";
     return $value;
 }
