@@ -16,7 +16,9 @@ function my_submit_account_details( $args ) {
                 UM()->mail()->send( $email, 'notification_deletion', array( 'admin' => true ) );
             }
         }
+        update_user_meta( um_user('ID'), 'account_status', 'archived' );
         UM()->roles()->set_role( um_user('ID'), 'um_archived' );
+        delete_option( "um_cache_userdata_" . um_user('ID'));
         wp_logout();
         um_redirect_home();
     }
