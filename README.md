@@ -12,7 +12,7 @@ Email is being sent when user is "deleting" the account and also later when the 
 
 Create a new UM role "Archived" (um_archived).
 
-The "Archived" users must be removed from Member Directories display by user setting.
+The "Archived" users must be removed from Member Directories display by UM user roles setting.
 
 Add the php source code to your child-theme functions.php file
 or use the Code Snippet plugin: https://wordpress.org/plugins/code-snippets/
