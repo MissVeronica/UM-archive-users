@@ -1,4 +1,4 @@
-# UM Archive of Deleted Users
+# UM Archive of Deleted User Accounts
 
 User deletion from the user account page will change the user to a new UM role "Archived" and also updating the "account_status" to "archived".
 
