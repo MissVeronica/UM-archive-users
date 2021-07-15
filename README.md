@@ -12,7 +12,8 @@ Email is being sent when user is "deleting" the account and also later when the 
 
 Create a new UM role "Archived" (um_archived).
 
-The "Archived" users can not be included in the Member Directories display by the UM user roles setting.
+Don't include the “Archived” role for display in:
+UM -> Member Directories -> Edit -> User Roles to Display 
 
 Add the php source code to your child-theme functions.php file
 or use the Code Snippet plugin with priority 9: https://wordpress.org/plugins/code-snippets/
