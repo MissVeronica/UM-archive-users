@@ -18,8 +18,7 @@ function my_submit_account_details( $args ) {
         }
         update_user_meta( um_user('ID'), 'account_status', 'archived' );
         //UM()->roles()->set_role( um_user('ID'), 'um_archived' );
-        $user = new \WP_User( um_user('ID') );
-	$user->set_role( 'um_archived' );
+        wp_update_user( array( 'ID' => um_user('ID'), 'role' => 'um_archived' ));
         delete_option( "um_cache_userdata_" . um_user('ID'));
         wp_logout();
         um_redirect_home();
